@@ -1,6 +1,3 @@
-manifest.json
-README.md
-upload_release.py
-packages/
+packages/*.zip
+packages/*.part
 *.part
-.git/
