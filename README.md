@@ -6,12 +6,25 @@
 - 程序拉取：`https://raw.githubusercontent.com/yanbai5201-netizen/driver-mirror/main/manifest.json`
 - **只同步规则与下载地址**，驱动 zip 通过 GitHub Release 分发
 
-## 目录
+## 目录说明（重要）
 
+| 位置 | 内容 |
+|------|------|
+| **GitHub 仓库 main** | 只有 `manifest.json` + `README.md` |
+| **GitHub Release** | `intel_chipset.zip` 等驱动包（大文件放这里） |
+| **本机 `driver-mirror-repo/`** | 本地打包/上传用的工作目录（在驱动项目里） |
+
+**不要把 zip 提交到 git**，zip 只上传到 Release。
+
+本地路径：
 ```
-manifest.json       ← 程序同步此文件
-packages/           ← 本地打包用（上传 Release 前在此准备 zip）
-README.md
+c:\Users\admin\Desktop\重复文件查询\driver-mirror-repo\
+  manifest.json
+  README.md
+  upload_release.py
+  packages\intel_chipset.zip
+  packages\intel_serialio.zip
+  packages\intel_bluetooth.zip
 ```
 
 ## 发新版流程

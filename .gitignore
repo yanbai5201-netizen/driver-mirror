@@ -1,0 +1,6 @@
+manifest.json
+README.md
+upload_release.py
+packages/
+*.part
+.git/
