@@ -1,67 +1,94 @@
 {
-  "version": "2026.05.22",
-  "updated": "2026-05-22",
+  "version": "2026.05.29",
+  "updated": "2026-05-21",
   "description": "驱动检测安装 - 远程镜像清单（yanbai5201-netizen/driver-mirror）",
   "repository": "https://github.com/yanbai5201-netizen/driver-mirror",
   "packages": {
     "Seed_Intel_Chipset_INF": {
-      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_chipset.zip",
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/intel_chipset.zip",
       "version": "10.1.20398.8776",
       "sha256": "d937dfc1d3bf177dd2197f6ca557489664c9fc06ea847b0f0388869834966354",
       "category": "chipset",
       "reboot_required": true,
-      "title": "Intel Chipset INF（全平台通用）"
+      "title": "Intel Chipset INF（全平台通用）",
+      "hwids": ["PCI\\VEN_8086&DEV_43A3", "PCI\\VEN_8086&DEV_43A4"]
     },
     "Seed_Intel_SerialIO": {
-      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_serialio.zip",
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/intel_serialio.zip",
       "version": "30.100.2413.30",
       "sha256": "df16db377b29eabdb7bce0ed16c9a46984e140f9b4e20a842457d20e1cbb7cc0",
       "category": "serial",
       "reboot_required": false,
-      "title": "Intel Serial IO"
+      "title": "Intel Serial IO",
+      "hwids": ["PCI\\VEN_8086&DEV_43A8", "PCI\\VEN_8086&DEV_A0A8", "PCI\\VEN_8086&DEV_9A60"]
     },
     "Seed_Intel_Bluetooth": {
-      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_bluetooth.zip",
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/intel_bluetooth.zip",
       "version": "23.120.0.3",
       "sha256": "8fbfa99144affef70a83eedcb788588fb02c3f88dfe9280fb0ad7e8115120916",
       "category": "bluetooth",
       "reboot_required": false,
-      "title": "Intel 蓝牙"
-    },
-    "Seed_Realtek_LAN": {
-      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/realtek_lan.zip",
-      "version": "",
-      "sha256": "",
-      "category": "lan",
-      "reboot_required": false,
-      "title": "Realtek 千兆网卡"
-    },
-    "Seed_Realtek_Audio": {
-      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/realtek_audio.zip",
-      "version": "",
-      "sha256": "",
-      "category": "audio",
-      "reboot_required": false,
-      "title": "Realtek 高清晰音频"
+      "title": "Intel 蓝牙",
+      "hwids": ["USB\\VID_8087&PID_07DC", "USB\\VID_8087&PID_0026", "USB\\VID_8087&PID_0032"]
     },
     "Seed_Intel_WiFi": {
-      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_wifi.zip",
-      "version": "",
-      "sha256": "",
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/intel_wifi.zip",
+      "version": "24.40.0.4",
+      "sha256": "1811bd659a112ee2aea73c78c902cdfc84140e4c567621c777aeb4e17216c41e",
       "category": "wifi",
       "reboot_required": false,
-      "title": "Intel 无线网卡"
+      "title": "Intel 无线网卡 (AX/AC 通用)",
+      "hwids": [
+        "PCI\\VEN_8086&DEV_2723",
+        "PCI\\VEN_8086&DEV_51F0",
+        "PCI\\VEN_8086&DEV_7A70",
+        "PCI\\VEN_8086&DEV_54F0",
+        "PCI\\VEN_8086&DEV_7740"
+      ]
     },
     "Seed_Intel_MEI": {
-      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_mei.zip",
-      "version": "",
-      "sha256": "",
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/intel_mei.zip",
+      "version": "2406.5.5.0",
+      "sha256": "9acc1ba103cae45c096b66adcdb1042310ff6165e99f8e76f28df47340cac04e",
       "category": "mei",
       "reboot_required": true,
-      "title": "Intel 管理引擎 MEI"
+      "title": "Intel 管理引擎 MEI",
+      "hwids": ["PCI\\VEN_8086&DEV_43E0", "PCI\\VEN_8086&DEV_A0EB"]
+    },
+    "Seed_Intel_RST": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/intel_rst.zip",
+      "version": "20.x",
+      "sha256": "cbe2e93caa5df1afe22f4b1c3519ac745870fbc43a11b0ad2eecc7193666f495",
+      "category": "storage",
+      "reboot_required": true,
+      "title": "Intel RST/VMD 快速存储",
+      "hwids": [
+        "PCI\\VEN_8086&DEV_09AB",
+        "PCI\\VEN_8086&DEV_467F",
+        "PCI\\VEN_8086&DEV_A77F",
+        "PCI\\VEN_8086&DEV_7D0B"
+      ]
+    },
+    "Seed_Realtek_LAN": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/realtek_lan.zip",
+      "version": "10.79.50.1003",
+      "sha256": "a6cbc3f196d76444685e28669392a13637b7f854612278845dc249eb095c971e",
+      "category": "lan",
+      "reboot_required": false,
+      "title": "Realtek 千兆网卡",
+      "hwids": ["PCI\\VEN_10EC&DEV_8168", "PCI\\VEN_10EC&DEV_8125"]
+    },
+    "Seed_Realtek_Audio": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/realtek_audio.zip",
+      "version": "6.0.9679.1",
+      "sha256": "21721f374b860f2690db6a976ee271b24696dd4ee052d7d02acf5db6202ec161",
+      "category": "audio",
+      "reboot_required": false,
+      "title": "Realtek 高清晰音频",
+      "hwids": ["HDAUDIO\\FUNC_01&VEN_10EC&DEV_0897", "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0269"]
     },
     "Seed_Intel_Graphics": {
-      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_graphics.zip",
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/intel_graphics.zip",
       "version": "",
       "sha256": "",
       "category": "gpu",
@@ -69,7 +96,7 @@
       "title": "Intel 核显 / Arc"
     },
     "Seed_Intel_SST": {
-      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_sst.zip",
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/intel_sst.zip",
       "version": "",
       "sha256": "",
       "category": "audio",
@@ -77,7 +104,7 @@
       "title": "Intel Smart Sound Technology"
     },
     "Seed_Intel_Platform": {
-      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_platform.zip",
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.29/intel_platform.zip",
       "version": "",
       "sha256": "",
       "category": "platform",

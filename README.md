@@ -39,13 +39,20 @@ c:\Users\admin\Desktop\重复文件查询\driver-mirror-repo\
 5. **Releases → New release**，Tag 如 `v2026.05.22`，上传 `packages/*.zip`
 6. 用户端：驱动程序 → **更多 → 同步驱动镜像清单**
 
-## 当前 Release v2026.05.22
+## 当前 Release v2026.05.29（阶段 1）
 
-| 文件 | 对应 Seed 包 | SHA256 |
-|------|----------------|--------|
-| intel_chipset.zip | Seed_Intel_Chipset_INF | 见 manifest.json |
-| intel_serialio.zip | Seed_Intel_SerialIO | 见 manifest.json |
-| intel_bluetooth.zip | Seed_Intel_Bluetooth | 见 manifest.json |
+| 文件 | 对应 Seed 包 | 状态 |
+|------|----------------|------|
+| intel_chipset.zip | Seed_Intel_Chipset_INF | 已上传 |
+| intel_serialio.zip | Seed_Intel_SerialIO | 已上传 |
+| intel_bluetooth.zip | Seed_Intel_Bluetooth | 已上传 |
+| intel_wifi.zip | Seed_Intel_WiFi | 新增 |
+| intel_mei.zip | Seed_Intel_MEI | 新增 |
+| intel_rst.zip | Seed_Intel_RST | 新增 |
+| realtek_lan.zip | Seed_Realtek_LAN | 新增 |
+| realtek_audio.zip | Seed_Realtek_Audio | 新增 |
+
+本地打包脚本：`build_phase1.ps1`（需联网 + 本机已安装对应驱动时可导出 MEI/LAN）
 
 其余包 URL 已在 manifest 中预留，上传 zip 后填 `sha256` 即可。
 
