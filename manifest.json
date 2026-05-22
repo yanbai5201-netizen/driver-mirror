@@ -1,0 +1,88 @@
+{
+  "version": "2026.05.22",
+  "updated": "2026-05-22",
+  "description": "驱动检测安装 - 远程镜像清单（yanbai5201-netizen/driver-mirror）",
+  "repository": "https://github.com/yanbai5201-netizen/driver-mirror",
+  "packages": {
+    "Seed_Intel_Chipset_INF": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_chipset.zip",
+      "version": "10.1.20398.8776",
+      "sha256": "d937dfc1d3bf177dd2197f6ca557489664c9fc06ea847b0f0388869834966354",
+      "category": "chipset",
+      "reboot_required": true,
+      "title": "Intel Chipset INF（全平台通用）"
+    },
+    "Seed_Intel_SerialIO": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_serialio.zip",
+      "version": "30.100.2413.30",
+      "sha256": "df16db377b29eabdb7bce0ed16c9a46984e140f9b4e20a842457d20e1cbb7cc0",
+      "category": "serial",
+      "reboot_required": false,
+      "title": "Intel Serial IO"
+    },
+    "Seed_Intel_Bluetooth": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_bluetooth.zip",
+      "version": "23.120.0.3",
+      "sha256": "8fbfa99144affef70a83eedcb788588fb02c3f88dfe9280fb0ad7e8115120916",
+      "category": "bluetooth",
+      "reboot_required": false,
+      "title": "Intel 蓝牙"
+    },
+    "Seed_Realtek_LAN": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/realtek_lan.zip",
+      "version": "",
+      "sha256": "",
+      "category": "lan",
+      "reboot_required": false,
+      "title": "Realtek 千兆网卡"
+    },
+    "Seed_Realtek_Audio": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/realtek_audio.zip",
+      "version": "",
+      "sha256": "",
+      "category": "audio",
+      "reboot_required": false,
+      "title": "Realtek 高清晰音频"
+    },
+    "Seed_Intel_WiFi": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_wifi.zip",
+      "version": "",
+      "sha256": "",
+      "category": "wifi",
+      "reboot_required": false,
+      "title": "Intel 无线网卡"
+    },
+    "Seed_Intel_MEI": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_mei.zip",
+      "version": "",
+      "sha256": "",
+      "category": "mei",
+      "reboot_required": true,
+      "title": "Intel 管理引擎 MEI"
+    },
+    "Seed_Intel_Graphics": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_graphics.zip",
+      "version": "",
+      "sha256": "",
+      "category": "gpu",
+      "reboot_required": false,
+      "title": "Intel 核显 / Arc"
+    },
+    "Seed_Intel_SST": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_sst.zip",
+      "version": "",
+      "sha256": "",
+      "category": "audio",
+      "reboot_required": false,
+      "title": "Intel Smart Sound Technology"
+    },
+    "Seed_Intel_Platform": {
+      "url": "https://github.com/yanbai5201-netizen/driver-mirror/releases/download/v2026.05.22/intel_platform.zip",
+      "version": "",
+      "sha256": "",
+      "category": "platform",
+      "reboot_required": false,
+      "title": "Intel 平台组件"
+    }
+  }
+}
