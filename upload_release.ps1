@@ -1,14 +1,15 @@
 # Upload driver zips to GitHub Release using git credential token
 $ErrorActionPreference = 'Stop'
 $Repo = 'yanbai5201-netizen/driver-mirror'
-$Tag = 'v2026.05.29'
-$Title = 'v2026.05.29'
-$Notes = 'Phase 1: 8 seed packages for common Intel/Realtek laptops.'
+$Tag = 'v2026.06.05'
+$Title = 'v2026.06.05'
+$Notes = 'Phase 2: AMD Chipset, Intel DTT/SST/Platform + Phase 1 seeds (12 packages).'
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $Assets = @(
     'intel_chipset.zip', 'intel_serialio.zip', 'intel_bluetooth.zip',
     'intel_wifi.zip', 'intel_mei.zip', 'intel_rst.zip',
-    'realtek_lan.zip', 'realtek_audio.zip'
+    'realtek_lan.zip', 'realtek_audio.zip',
+    'amd_chipset.zip', 'intel_dtt.zip', 'intel_sst.zip', 'intel_platform.zip'
 ) | ForEach-Object { Join-Path $Root "packages\$_" }
 
 function Get-GitHubToken {

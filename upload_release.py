@@ -10,12 +10,9 @@ import urllib.request
 from pathlib import Path
 
 REPO = "yanbai5201-netizen/driver-mirror"
-TAG = "v2026.05.29"
-TITLE = "v2026.05.29"
-NOTES = (
-    "Phase 1 mirror expansion: Intel WiFi/MEI/RST, Realtek LAN/Audio, "
-    "plus existing Chipset/SerialIO/Bluetooth packages."
-)
+TAG = "v2026.06.05"
+TITLE = "v2026.06.05"
+NOTES = "Phase 2: AMD Chipset, Intel DTT/SST/Platform + Phase 1 seeds (12 packages)."
 ROOT = Path(__file__).resolve().parent
 ASSETS = [
     ROOT / "packages" / "intel_chipset.zip",

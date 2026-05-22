@@ -39,22 +39,27 @@ c:\Users\admin\Desktop\重复文件查询\driver-mirror-repo\
 5. **Releases → New release**，Tag 如 `v2026.05.22`，上传 `packages/*.zip`
 6. 用户端：驱动程序 → **更多 → 同步驱动镜像清单**
 
-## 当前 Release v2026.05.29（阶段 1）
+## 当前 Release v2026.06.05（阶段 2）
 
-| 文件 | 对应 Seed 包 | 状态 |
-|------|----------------|------|
-| intel_chipset.zip | Seed_Intel_Chipset_INF | 已上传 |
-| intel_serialio.zip | Seed_Intel_SerialIO | 已上传 |
-| intel_bluetooth.zip | Seed_Intel_Bluetooth | 已上传 |
-| intel_wifi.zip | Seed_Intel_WiFi | 新增 |
-| intel_mei.zip | Seed_Intel_MEI | 新增 |
-| intel_rst.zip | Seed_Intel_RST | 新增 |
-| realtek_lan.zip | Seed_Realtek_LAN | 新增 |
-| realtek_audio.zip | Seed_Realtek_Audio | 新增 |
+| 文件 | Seed 包 | 状态 |
+|------|---------|------|
+| intel_chipset.zip | Seed_Intel_Chipset_INF | 已有 |
+| intel_serialio.zip | Seed_Intel_SerialIO | 已有 |
+| intel_bluetooth.zip | Seed_Intel_Bluetooth | 已有 |
+| intel_wifi.zip | Seed_Intel_WiFi | 已有 |
+| intel_mei.zip | Seed_Intel_MEI | 已有 |
+| intel_rst.zip | Seed_Intel_RST | 已有 |
+| realtek_lan.zip | Seed_Realtek_LAN | 已有 |
+| realtek_audio.zip | Seed_Realtek_Audio | 已有 |
+| **amd_chipset.zip** | **Seed_AMD_Chipset** | **新增** |
+| **intel_dtt.zip** | **Seed_Intel_DTT** | **新增** |
+| **intel_sst.zip** | **Seed_Intel_SST** | **新增** |
+| **intel_platform.zip** | **Seed_Intel_Platform** | **新增** |
+| intel_graphics.zip | Seed_Intel_Graphics | 占位（核显包 >100MB，下阶段 CDN 分发） |
 
-本地打包脚本：`build_phase1.ps1`（需联网 + 本机已安装对应驱动时可导出 MEI/LAN）
+manifest 已升级 `schema_version: 2`，含 `vendor` / `priority` / `risk` / `whql` 元数据。
 
-其余包 URL 已在 manifest 中预留，上传 zip 后填 `sha256` 即可。
+本地脚本：`build_phase1.ps1`、`build_phase2.ps1`
 
 ## 注意
 
